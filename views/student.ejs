@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/student.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= name %></title>
+</head>
+<body>
+    <div class="flex"><% if (name && rollnumber && id) { %>
+        
+            <h4>Name : <%= name %></h4>
+            <h4>Roll Number : <%= rollnumber %></h4>
+            <h4>Id : <%= id %></h4>
+        
+      <% } else if (name === undefined || rollnumber === undefined || id === undefined) {%>
+        <h1>no data found</h1>    
+        <%}
+       else { %>
+        <h1>no data found</h1>
+      <% } %></h3>
+</body>
+</html>
